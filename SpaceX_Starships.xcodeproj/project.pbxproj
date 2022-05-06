@@ -11,6 +11,14 @@
 		7D93F056282513D700F126D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F055282513D700F126D1 /* ContentView.swift */; };
 		7D93F058282513DB00F126D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D93F057282513DB00F126D1 /* Assets.xcassets */; };
 		7D93F05B282513DB00F126D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D93F05A282513DB00F126D1 /* Preview Assets.xcassets */; };
+		7D93F0662825149A00F126D1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F0652825149A00F126D1 /* MainView.swift */; };
+		7D93F068282514AD00F126D1 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F067282514AD00F126D1 /* MainViewViewModel.swift */; };
+		7D93F06A282514B900F126D1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F069282514B900F126D1 /* MainViewModel.swift */; };
+		7D93F06C282514C800F126D1 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F06B282514C800F126D1 /* ModalView.swift */; };
+		7D93F06E282514D400F126D1 /* ModalViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F06D282514D400F126D1 /* ModalViewViewModel.swift */; };
+		7D93F070282514DF00F126D1 /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F06F282514DF00F126D1 /* ModalViewModel.swift */; };
+		7D93F072282514ED00F126D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F071282514ED00F126D1 /* SettingsView.swift */; };
+		7D93F0742825150800F126D1 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F0732825150800F126D1 /* SettingsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		7D93F055282513D700F126D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D93F057282513DB00F126D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D93F05A282513DB00F126D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D93F0652825149A00F126D1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7D93F067282514AD00F126D1 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		7D93F069282514B900F126D1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		7D93F06B282514C800F126D1 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		7D93F06D282514D400F126D1 /* ModalViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewViewModel.swift; sourceTree = "<group>"; };
+		7D93F06F282514DF00F126D1 /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
+		7D93F071282514ED00F126D1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7D93F0732825150800F126D1 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,7 @@
 		7D93F052282513D700F126D1 /* SpaceX_Starships */ = {
 			isa = PBXGroup;
 			children = (
+				7D93F0612825145E00F126D1 /* MVVM */,
 				7D93F053282513D700F126D1 /* SpaceX_StarshipsApp.swift */,
 				7D93F055282513D700F126D1 /* ContentView.swift */,
 				7D93F057282513DB00F126D1 /* Assets.xcassets */,
@@ -65,6 +82,45 @@
 				7D93F05A282513DB00F126D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D93F0612825145E00F126D1 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				7D93F0642825147F00F126D1 /* Settings Screen */,
+				7D93F0632825147600F126D1 /* Modal Screen */,
+				7D93F0622825146700F126D1 /* Main Screen */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		7D93F0622825146700F126D1 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7D93F0652825149A00F126D1 /* MainView.swift */,
+				7D93F067282514AD00F126D1 /* MainViewViewModel.swift */,
+				7D93F069282514B900F126D1 /* MainViewModel.swift */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		7D93F0632825147600F126D1 /* Modal Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7D93F06B282514C800F126D1 /* ModalView.swift */,
+				7D93F06D282514D400F126D1 /* ModalViewViewModel.swift */,
+				7D93F06F282514DF00F126D1 /* ModalViewModel.swift */,
+			);
+			path = "Modal Screen";
+			sourceTree = "<group>";
+		};
+		7D93F0642825147F00F126D1 /* Settings Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7D93F071282514ED00F126D1 /* SettingsView.swift */,
+				7D93F0732825150800F126D1 /* SettingsViewViewModel.swift */,
+			);
+			path = "Settings Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D93F0742825150800F126D1 /* SettingsViewViewModel.swift in Sources */,
+				7D93F070282514DF00F126D1 /* ModalViewModel.swift in Sources */,
+				7D93F06C282514C800F126D1 /* ModalView.swift in Sources */,
+				7D93F06A282514B900F126D1 /* MainViewModel.swift in Sources */,
+				7D93F072282514ED00F126D1 /* SettingsView.swift in Sources */,
+				7D93F06E282514D400F126D1 /* ModalViewViewModel.swift in Sources */,
 				7D93F056282513D700F126D1 /* ContentView.swift in Sources */,
+				7D93F0662825149A00F126D1 /* MainView.swift in Sources */,
+				7D93F068282514AD00F126D1 /* MainViewViewModel.swift in Sources */,
 				7D93F054282513D700F126D1 /* SpaceX_StarshipsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
