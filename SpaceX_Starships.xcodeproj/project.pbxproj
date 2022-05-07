@@ -19,6 +19,8 @@
 		7D93F070282514DF00F126D1 /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F06F282514DF00F126D1 /* ModalViewModel.swift */; };
 		7D93F072282514ED00F126D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F071282514ED00F126D1 /* SettingsView.swift */; };
 		7D93F0742825150800F126D1 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F0732825150800F126D1 /* SettingsViewViewModel.swift */; };
+		7D93F077282723F300F126D1 /* mftSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F076282723F300F126D1 /* mftSwitch.swift */; };
+		7D93F0792827240A00F126D1 /* kglbSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F0782827240A00F126D1 /* kglbSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		7D93F06F282514DF00F126D1 /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
 		7D93F071282514ED00F126D1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7D93F0732825150800F126D1 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
+		7D93F076282723F300F126D1 /* mftSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mftSwitch.swift; sourceTree = "<group>"; };
+		7D93F0782827240A00F126D1 /* kglbSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kglbSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +121,20 @@
 		7D93F0642825147F00F126D1 /* Settings Screen */ = {
 			isa = PBXGroup;
 			children = (
+				7D93F075282723CE00F126D1 /* CustomSwitches */,
 				7D93F071282514ED00F126D1 /* SettingsView.swift */,
 				7D93F0732825150800F126D1 /* SettingsViewViewModel.swift */,
 			);
 			path = "Settings Screen";
+			sourceTree = "<group>";
+		};
+		7D93F075282723CE00F126D1 /* CustomSwitches */ = {
+			isa = PBXGroup;
+			children = (
+				7D93F076282723F300F126D1 /* mftSwitch.swift */,
+				7D93F0782827240A00F126D1 /* kglbSwitch.swift */,
+			);
+			path = CustomSwitches;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,12 +209,14 @@
 			files = (
 				7D93F0742825150800F126D1 /* SettingsViewViewModel.swift in Sources */,
 				7D93F070282514DF00F126D1 /* ModalViewModel.swift in Sources */,
+				7D93F077282723F300F126D1 /* mftSwitch.swift in Sources */,
 				7D93F06C282514C800F126D1 /* ModalView.swift in Sources */,
 				7D93F06A282514B900F126D1 /* MainViewModel.swift in Sources */,
 				7D93F072282514ED00F126D1 /* SettingsView.swift in Sources */,
 				7D93F06E282514D400F126D1 /* ModalViewViewModel.swift in Sources */,
 				7D93F056282513D700F126D1 /* ContentView.swift in Sources */,
 				7D93F0662825149A00F126D1 /* MainView.swift in Sources */,
+				7D93F0792827240A00F126D1 /* kglbSwitch.swift in Sources */,
 				7D93F068282514AD00F126D1 /* MainViewViewModel.swift in Sources */,
 				7D93F054282513D700F126D1 /* SpaceX_StarshipsApp.swift in Sources */,
 			);
