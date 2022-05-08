@@ -16,7 +16,7 @@ struct kglbSwitch: View {
         withAnimation(.spring()) {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
-                    .frame(width: 140, height: 50)
+                    .frame(width: 115, height: 40)
                     .foregroundColor(Color.init(uiColor: .systemGray5))
                 ZStack {
                     HStack {
@@ -24,27 +24,27 @@ struct kglbSwitch: View {
                             Spacer()
                         }
                         RoundedRectangle(cornerRadius: 10)
-                            .frame(width: 70, height: 45)
+                            .frame(width: 56, height: 35)
                             .foregroundColor(.white)
-                            .padding(.init(top: 0, leading: 2.5, bottom: 0, trailing: 2.5))
+                            .padding(.init(top: 3, leading: 3, bottom: 3, trailing: 3))
                             .onTapGesture {
                                 self.show.toggle()
                             }
                         if !show {
                             Spacer()
                         }
-                    }.frame(width: 140, height: 50)
+                    }.frame(width: 115, height: 40)
                     HStack {
                         Text("kg")
-                            .font(.system(size: 20))
+                            .font(.system(size: 15))
                             .foregroundColor(show ? Color.init(uiColor: .lightGray) : Color.init(uiColor: .black))
                             .bold()
-                        Spacer().frame(width: 50)
+                        Spacer().frame(width: 40)
                         Text("lb")
-                            .font(.system(size: 20))
+                            .font(.system(size: 15))
                             .foregroundColor(show ? Color.init(uiColor: .black) : Color.init(uiColor: .lightGray))
                             .bold()
-                    }.frame(width: 140, height: 50)
+                    }.frame(width: 115, height: 40)
                 }
                 .animation(.spring())
             }

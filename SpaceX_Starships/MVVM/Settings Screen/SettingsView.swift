@@ -23,25 +23,25 @@ struct SettingsView: View {
             VStack {
                 HStack {
                     Text("Высота")
-                        .font(.system(size: 20))
+                        .font(.system(size: 15))
                     Spacer()
                     mftSwitch(show: $heightToggle)
                 }.padding(.init(top: 10, leading: 20, bottom: 10, trailing: 20))
                 HStack {
                     Text("Диаметр")
-                        .font(.system(size: 20))
+                        .font(.system(size: 15))
                     Spacer()
                     mftSwitch(show: $diameterToggle)
                 }.padding(.init(top: 10, leading: 20, bottom: 10, trailing: 20))
                 HStack {
                     Text("Масса")
-                        .font(.system(size: 20))
+                        .font(.system(size: 15))
                     Spacer()
                     kglbSwitch(show: $massToggle)
                 }.padding(.init(top: 10, leading: 20, bottom: 10, trailing: 20))
                 HStack {
                     Text("Полезная нагрузка")
-                        .font(.system(size: 20))
+                        .font(.system(size: 15))
                     Spacer()
                     kglbSwitch(show: $payloadToggle)
                 }.padding(.init(top: 10, leading: 20, bottom: 10, trailing: 20))
