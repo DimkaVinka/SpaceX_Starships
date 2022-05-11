@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @State private var showModalView: Bool = true
+    @ObservedObject var rocketsArray: MainViewNetworkManager
     
     var body: some View {
         TabView {
@@ -41,12 +42,16 @@ struct MainView: View {
             .edgesIgnoringSafeArea(.top)
         }.tabViewStyle(.page(indexDisplayMode: .always))
             .ignoresSafeArea(.all, edges: [.top])
+            .accentColor(Color.white)
+            .onAppear {
+                
+            }
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(rocketsArray: MainViewNetworkManager())
             .preferredColorScheme(.dark)
     }
 }
