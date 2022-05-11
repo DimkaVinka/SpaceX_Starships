@@ -11,7 +11,7 @@ import SwiftUI
 struct SpaceX_StarshipsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(firstNetworkManager: MainViewNetworkManager())
                 .environment(\.colorScheme, .dark)
         }
     }

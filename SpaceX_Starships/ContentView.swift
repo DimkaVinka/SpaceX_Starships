@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var firstNetworkManager: MainViewNetworkManager
+    
     var body: some View {
         MainView(rocketsArray: MainViewNetworkManager())
+            .onAppear {
+                firstNetworkManager.getDataForMainView()
+            }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(firstNetworkManager: MainViewNetworkManager())
             .preferredColorScheme(.dark)
     }
 }

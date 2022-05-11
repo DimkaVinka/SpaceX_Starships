@@ -11,9 +11,13 @@ struct MainView: View {
     
     @State private var showModalView: Bool = true
     @ObservedObject var rocketsArray: MainViewNetworkManager
+    @State private var showSettingsView: Bool = false
+    @State private var name: String = "some name"
     
     var body: some View {
+        
         TabView {
+            
             ScrollView(.vertical, showsIndicators: false) {
                 AsyncImage(url: URL(string: "https://imgur.com/DaCfMsj.jpg"), content: { image in
                     image.resizable()
@@ -27,15 +31,35 @@ struct MainView: View {
                         .ignoresSafeArea()
                         .cornerRadius(20, corners: [.topLeft, .topRight])
                     VStack {
-                        MainInformationView()
+                        HStack {
+                            Text(name)
+                                .font(.system(size: 30))
+                                .bold()
+                            Spacer()
+                            Button {
+                                self.showSettingsView.toggle()
+                            } label: {
+                                Image(systemName: "gearshape")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                            }.sheet(isPresented: $showSettingsView) {
+                                SettingsView()
+                            }
+                        }.padding()
                         Spacer()
-                        FirstAndSecondStagesView()
+                        GridView(height: 0, diameter: 0, mass: 0, load: 0)
                         Spacer()
-                        NavigationLink {
-                            ModalView()
-                        } label: {
-                            ButtonView()
-                        }
+                        MainInformationView(firstLaunch: "100", country: "USA", launchCost: "500")
+                        Spacer()
+                        FirstStageView(enginesCount: 0, fuelCount: 0, burnTime: 0)
+                        Spacer()
+                        SecondStageView(enginesCount: 0, fuelCount: 0, burnTime: 0)
+                        Spacer()
+//                        NavigationLink {
+//                            ModalView()
+//                        } label: {
+//                            ButtonView()
+//                        }
                     }
                 }
             }
@@ -43,9 +67,6 @@ struct MainView: View {
         }.tabViewStyle(.page(indexDisplayMode: .always))
             .ignoresSafeArea(.all, edges: [.top])
             .accentColor(Color.white)
-            .onAppear {
-                
-            }
     }
 }
 
