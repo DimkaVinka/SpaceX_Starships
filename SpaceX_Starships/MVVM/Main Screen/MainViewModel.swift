@@ -16,7 +16,7 @@ struct Model: Codable {
     let name: String
     let cost_per_launch: Int
     let country: String
-    let flickr_images: String
+    let flickr_images: [String]
     let id: String
 }
 
@@ -35,3 +35,4 @@ struct Stage: Codable {
     let fuel_amount_tons: Double
     let burn_time_sec: Int
 }
+

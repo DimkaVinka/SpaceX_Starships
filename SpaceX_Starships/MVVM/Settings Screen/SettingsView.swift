@@ -58,6 +58,10 @@ struct SettingsView: View {
                             .bold()
                     }
                 }
+                ToolbarItem(placement: .principal) {
+                    Text("Настройки")
+                        .font(.system(size: 20))
+                }
             }
         }
         .accentColor(.white)
