@@ -11,9 +11,11 @@ struct Model: Decodable {
     let height: MetersFeet
     let diameter: MetersFeet
     let mass: Mass
+    let payload_weights: [Mass]
     let first_stage: Stage
     let second_stage: Stage
     let name: String
+    let first_flight: String
     let cost_per_launch: Int
     let country: String
     let flickr_images: [String]

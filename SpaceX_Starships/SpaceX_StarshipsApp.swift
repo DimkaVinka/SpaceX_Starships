@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SpaceX_StarshipsApp: App {
+    
+    @StateObject var firstNetworkManager = MainViewNetworkManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView(firstNetworkManager: MainViewNetworkManager())
+            ContentView()
+                .environmentObject(firstNetworkManager)
                 .environment(\.colorScheme, .dark)
         }
     }

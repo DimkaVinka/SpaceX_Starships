@@ -9,11 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var firstNetworkManager: MainViewNetworkManager
+    @EnvironmentObject var firstNetworkManager: MainViewNetworkManager
     
     var body: some View {
-        //        MainView(rocketsArray: MainViewNetworkManager())
-        Text("Hello World!")
+        VStack {
+            if !firstNetworkManager.rocketsArray.isEmpty {
+                MainView()
+            }
+        }
         .onAppear {
             firstNetworkManager.getDataForMainView()
         }
@@ -22,7 +25,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(firstNetworkManager: MainViewNetworkManager())
+        ContentView()
             .preferredColorScheme(.dark)
     }
 }
