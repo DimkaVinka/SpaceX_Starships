@@ -24,7 +24,6 @@ class MainViewNetworkManager: ObservableObject {
                 do {
                     let rockets = try JSONDecoder().decode([Model].self, from: data)
                     self.rocketsArray = rockets
-                    print(self.rocketsArray)
                 } catch let jsonError {
                     print("Error serializing json: \(jsonError)")
                 }

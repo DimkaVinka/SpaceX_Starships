@@ -12,10 +12,11 @@ struct ContentView: View {
     var firstNetworkManager: MainViewNetworkManager
     
     var body: some View {
-        MainView(rocketsArray: MainViewNetworkManager())
-            .onAppear {
-                firstNetworkManager.getDataForMainView()
-            }
+        //        MainView(rocketsArray: MainViewNetworkManager())
+        Text("Hello World!")
+        .onAppear {
+            firstNetworkManager.getDataForMainView()
+        }
     }
 }
 
