@@ -10,6 +10,10 @@ import SwiftUI
 struct ModalView: View {
     
     @State var success: Bool = false
+    @State var name: String = "FalconSat"
+    @State var date: String = "2 февраля, 2022"
+    
+    @State var ricketID: String = "id"
     
     var body: some View {
         NavigationView {
@@ -22,9 +26,9 @@ struct ModalView: View {
                             .foregroundColor(.init(uiColor: .systemGray5))
                         HStack {
                             VStack(alignment: .leading) {
-                                Text("FalconSat")
+                                Text(name)
                                     .font(.title2)
-                                Text("2 февраля, 2022")
+                                Text(date)
                                     .foregroundColor(.gray)
                             }.padding(.init(top: 0, leading: 30, bottom: 0, trailing: 0))
                             Spacer()

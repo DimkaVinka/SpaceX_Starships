@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D0E24132829919200EED577 /* FirstAndSecondStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E24122829919200EED577 /* FirstAndSecondStagesView.swift */; };
+		7D0E24132829919200EED577 /* FirstStageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E24122829919200EED577 /* FirstStageView.swift */; };
 		7D0E24152829924A00EED577 /* MainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E24142829924A00EED577 /* MainInformationView.swift */; };
 		7D0E2418282BFB9D00EED577 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E2417282BFB9D00EED577 /* ViewExtensions.swift */; };
+		7D0E241A282C482400EED577 /* SecondStageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E2419282C482400EED577 /* SecondStageView.swift */; };
+		7D0E241C282C4BCF00EED577 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E241B282C4BCF00EED577 /* GridView.swift */; };
 		7D93F054282513D700F126D1 /* SpaceX_StarshipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F053282513D700F126D1 /* SpaceX_StarshipsApp.swift */; };
 		7D93F056282513D700F126D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F055282513D700F126D1 /* ContentView.swift */; };
 		7D93F058282513DB00F126D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D93F057282513DB00F126D1 /* Assets.xcassets */; };
@@ -28,9 +30,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7D0E24122829919200EED577 /* FirstAndSecondStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAndSecondStagesView.swift; sourceTree = "<group>"; };
+		7D0E24122829919200EED577 /* FirstStageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStageView.swift; sourceTree = "<group>"; };
 		7D0E24142829924A00EED577 /* MainInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInformationView.swift; sourceTree = "<group>"; };
 		7D0E2417282BFB9D00EED577 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		7D0E2419282C482400EED577 /* SecondStageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStageView.swift; sourceTree = "<group>"; };
+		7D0E241B282C4BCF00EED577 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		7D93F050282513D700F126D1 /* SpaceX_Starships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX_Starships.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D93F053282513D700F126D1 /* SpaceX_StarshipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceX_StarshipsApp.swift; sourceTree = "<group>"; };
 		7D93F055282513D700F126D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,8 +163,10 @@
 			children = (
 				7D93F0652825149A00F126D1 /* MainView.swift */,
 				7D93F07A2827EDB100F126D1 /* ButtonView.swift */,
-				7D0E24122829919200EED577 /* FirstAndSecondStagesView.swift */,
+				7D0E24122829919200EED577 /* FirstStageView.swift */,
+				7D0E2419282C482400EED577 /* SecondStageView.swift */,
 				7D0E24142829924A00EED577 /* MainInformationView.swift */,
+				7D0E241B282C4BCF00EED577 /* GridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,10 +243,11 @@
 			files = (
 				7D0E24152829924A00EED577 /* MainInformationView.swift in Sources */,
 				7D93F0742825150800F126D1 /* SettingsViewViewModel.swift in Sources */,
+				7D0E241A282C482400EED577 /* SecondStageView.swift in Sources */,
 				7D93F070282514DF00F126D1 /* ModalViewModel.swift in Sources */,
 				7D93F077282723F300F126D1 /* mftSwitch.swift in Sources */,
 				7D93F06C282514C800F126D1 /* ModalView.swift in Sources */,
-				7D0E24132829919200EED577 /* FirstAndSecondStagesView.swift in Sources */,
+				7D0E24132829919200EED577 /* FirstStageView.swift in Sources */,
 				7D93F06A282514B900F126D1 /* MainViewModel.swift in Sources */,
 				7D93F072282514ED00F126D1 /* SettingsView.swift in Sources */,
 				7D93F06E282514D400F126D1 /* ModalViewViewModel.swift in Sources */,
@@ -250,6 +257,7 @@
 				7D93F0792827240A00F126D1 /* kglbSwitch.swift in Sources */,
 				7D93F068282514AD00F126D1 /* MainViewViewModel.swift in Sources */,
 				7D93F07B2827EDB200F126D1 /* ButtonView.swift in Sources */,
+				7D0E241C282C4BCF00EED577 /* GridView.swift in Sources */,
 				7D93F054282513D700F126D1 /* SpaceX_StarshipsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

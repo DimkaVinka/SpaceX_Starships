@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var firstNetworkManager: MainViewNetworkManager
+    
     var body: some View {
-        MainView(rocketsArray: MainViewNetworkManager())
+        VStack {
+            if !firstNetworkManager.rocketsArray.isEmpty {
+                MainView()
+            }
+        }
+        .onAppear {
+            firstNetworkManager.getDataForMainView()
+        }
     }
 }
 
