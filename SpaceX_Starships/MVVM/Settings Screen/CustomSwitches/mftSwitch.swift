@@ -18,7 +18,6 @@ struct mftSwitch: View {
                 RoundedRectangle(cornerRadius: 10)
                     .frame(width: 115, height: 40)
                     .foregroundColor(Color.init(uiColor: .systemGray5))
-                withAnimation(.spring()) {
                     ZStack {
                         HStack {
                             if show {
@@ -47,9 +46,7 @@ struct mftSwitch: View {
                                 .bold()
                         }.frame(width: 115, height: 40)
                     }
-                }
-                
-//                .animation(.spring())
+                .animation(.spring())
             }
         }
     }
